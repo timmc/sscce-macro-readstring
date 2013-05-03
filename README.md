@@ -20,7 +20,7 @@ Thanks to hiredman for explaining this.
 $ lein run
 About to hit the bad code...
 Exception in thread "main" java.lang.ExceptionInInitializerError
-	at org.timmc.sscce.macro_readstring$_main.doInvoke(macro_readstring.clj:22)
+	at org.timmc.sscce.macro_readstring$_main.doInvoke(macro_readstring.clj:24)
 	at clojure.lang.RestFn.invoke(RestFn.java:397)
 	at clojure.lang.Var.invoke(Var.java:411)
 	at user$eval23.invoke(NO_SOURCE_FILE:1)
@@ -41,7 +41,7 @@ Caused by: java.lang.RuntimeException: Reading disallowed - *read-eval* bound to
 	at clojure.lang.Util.runtimeException(Util.java:219)
 	at clojure.lang.LispReader.read(LispReader.java:156)
 	at clojure.lang.RT.readString(RT.java:1738)
-	at org.timmc.sscce.macro_readstring$_main$fail_init__18.<clinit>(macro_readstring.clj:22)
+	at org.timmc.sscce.macro_readstring$_main$fail_init__18.<clinit>(macro_readstring.clj:24)
 	... 17 more
 ```
 

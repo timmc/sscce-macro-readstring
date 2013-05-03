@@ -17,8 +17,8 @@
 (defn -main
   "Entrance point for demo."
   [& args]
-  ;; There are a few extraneous lines in here just to demonstrate that the
-  ;; line number in the stack trace does not point to the bad code.
+  ;; The line number in the stack trace does not always point to the bad code,
+  ;; but I couldn't reproduce that here.
   (println "About to hit the bad code...")
   ;; And here's where the bad code is emitted:
   (breaker))
