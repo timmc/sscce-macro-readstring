@@ -1,4 +1,7 @@
-(ns org.timmc.sscce.macro-readstring)
+(ns org.timmc.sscce.macro-readstring
+  ;; Optional; assists debugging. (Otherwise, javap complains about not
+  ;; finding the macro_readstring class.)
+  (:gen-class))
 
 (defmacro breaker
   []
@@ -16,6 +19,6 @@
   [& args]
   ;; There are a few extraneous lines in here just to demonstrate that the
   ;; line number in the stack trace does not point to the bad code.
-  (println "This is above the bad code, but does not get run.")
+  (println "About to hit the bad code...")
   ;; And here's where the bad code is emitted:
   (breaker))
