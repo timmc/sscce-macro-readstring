@@ -10,7 +10,9 @@ Thanks to hiredman for explaining this.
 
 ## Usage
 
-`lein run`
+`lein run` will execute the [main namespace][main].
+
+[main]: src/org/timmc/sscce/macro_readstring.clj
 
 ## Stack trace
 
