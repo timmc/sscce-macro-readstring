@@ -6,6 +6,8 @@ who is even moderately familiar with Clojure internals.
 
 [SSCCE]: http://sscce.org/
 
+Thanks to hiredman for explaining this.
+
 ## Usage
 
 `lein run`
